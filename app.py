@@ -46,7 +46,7 @@ class PassGen:
     def SavePassword(self, password, values):
         file = open('senhas.txt', 'a')
         file.write(f'Site: {values["site"]}, Usuário: {values["user"]}, Senha: {password}\n')
-        print('Aquivo salvo com suceso!')
+        print(f'Aquivo salvo com suceso! \n Senha Gerada: {password}')
 
 gen = PassGen()
 gen.Init()
